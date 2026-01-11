@@ -1,0 +1,44 @@
+{
+  "raid": {
+    "baseNightChancePercent": 2.0,
+    "doubleChanceIf2OrMoreQualifiedPlayers": true,
+    "minY": 70,
+    "lodestoneRadiusBlocks": 16,
+    "minMobs": 15,
+    "maxMobs": 50,
+    "spawnRadiusAroundLodestoneBlocks": 20,
+    "maxSpawnAttemptsPerMob": 12,
+    "nightStartTick": 13000
+  },
+  "chat": {
+    "announceTo": "WORLD",
+    "messageColorCode": "§4§l",
+    "messages": [
+      "A chill crawls through the air... The night horde awakens.",
+      "The Lodestone hums. Something answers in the dark.",
+      "You hear scraping footsteps... They are coming."
+    ]
+  },
+  "boss": {
+    "enabled": true,
+    "chancePerRaidPercent": 35.0,
+    "howToChooseBoss": "FROM_MOB_TABLE",
+    "forcedBossMobId": "minecraft:zombie",
+    "healthMultiplier": 3.0,
+    "damageMultiplier": 1.5,
+    "glowing": true,
+    "namePrefix": "Boss ",
+    "nameColorCode": "§4§l"
+  },
+  "bossBar": {
+    "enabled": true,
+    "showWithinBlocks": 48,
+    "darkenSky": false,
+    "playMusic": false
+  },
+  "mobTable": [
+    { "mobId": "minecraft:zombie", "weight": 40 },
+    { "mobId": "minecraft:skeleton", "weight": 35 },
+    { "mobId": "minecraft:creeper", "weight": 25 }
+  ]
+}

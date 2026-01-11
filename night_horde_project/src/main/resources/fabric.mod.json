@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "night_horde",
+  "version": "${version}",
+  "name": "Night Horde",
+  "description": "Configurable nightly horde raids near lodestones (server-side).",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.yourname.nighthorde.NightHordeMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric": "*",
+    "minecraft": "1.21.11"
+  }
+}
