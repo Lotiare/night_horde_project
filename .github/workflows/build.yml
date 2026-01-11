@@ -25,13 +25,15 @@ jobs:
 
       - name: Build mod
         run: |
-          cd night_horde_project
-          gradle --no-daemon build
+          cd night_horde_project/night_horde_project
+          gradle --no-daemon build --stacktrace
+
 
 
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
         with:
           name: night-horde-jar
-          path: "night_horde_project/build/libs/*.jar"
+          path: "night_horde_project/night_horde_project/build/libs/*.jar"
+
 
