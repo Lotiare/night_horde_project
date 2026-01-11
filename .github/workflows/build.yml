@@ -24,10 +24,14 @@ jobs:
           gradle-version: 9.2.1
 
       - name: Build mod
-        run: gradle build
+        run: |
+          cd night_horde_project
+          gradle --no-daemon build
+
 
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
         with:
           name: night-horde-jar
-          path: build/libs/*.jar
+          path: "night_horde_project/build/libs/*.jar"
+
